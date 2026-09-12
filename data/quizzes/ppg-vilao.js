@@ -93,6 +93,51 @@ module.exports = {
         { label: 'Cobertura cheia de brinquedos caros', scores: { princess: 2 } },
         { label: 'Cabana no mato, longe de todos', scores: { fuzzy: 2 } }
       ]
+    },
+    {
+      text: 'Seu hobby do mal:',
+      options: [
+        { label: 'Escrever monólogos e planos no quadro', scores: { mojo: 2 } },
+        { label: 'Observar gente e colecionar segredos', scores: { him: 2 } },
+        { label: 'Comprar tudo que brilha', scores: { princess: 2 } },
+        { label: 'Tomar chá sozinha sem interrupção', scores: { fuzzy: 2 } }
+      ]
+    },
+    {
+      text: 'Como você entra numa festa:',
+      options: [
+        { label: 'Com um discurso e presença teatral', scores: { mojo: 2 } },
+        { label: 'Em silêncio… e todo mundo sente', scores: { him: 2 } },
+        { label: 'Pedindo VIP e foto no feed', scores: { princess: 2 } },
+        { label: 'Já querendo ir embora', scores: { fuzzy: 2 } }
+      ]
+    },
+    {
+      text: 'Seu emoji do dia a dia:',
+      options: [
+        { label: '🧠💥', scores: { mojo: 2 } },
+        { label: '😈💅', scores: { him: 2 } },
+        { label: '👑💸', scores: { princess: 2 } },
+        { label: '😤🏡', scores: { fuzzy: 2 } }
+      ]
+    },
+    {
+      text: 'Na discussão online você…',
+      options: [
+        { label: 'Manda um thread de 20 argumentos', scores: { mojo: 2 } },
+        { label: 'Responde com uma frase gelada', scores: { him: 2 } },
+        { label: 'Flexa seguidores e status', scores: { princess: 2 } },
+        { label: 'Bloqueia e some', scores: { fuzzy: 2 } }
+      ]
+    },
+    {
+      text: 'Seu vilão favorito de outros desenhos combina com…',
+      options: [
+        { label: 'Cérebro / cientista maluco', scores: { mojo: 2 } },
+        { label: 'Vilã estética e psicológica', scores: { him: 2 } },
+        { label: 'Rival rica e glamurosa', scores: { princess: 2 } },
+        { label: 'Criatura brava territorial', scores: { fuzzy: 2 } }
+      ]
     }
   ]
 };

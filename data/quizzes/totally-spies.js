@@ -80,6 +80,38 @@ module.exports = {
         { label: 'Batom laser / bolsa de gadgets', scores: { clover: 2 } },
         { label: 'Tênis turbo / skate jet', scores: { alex: 2 } }
       ]
+    },
+    {
+      text: 'Seu vilão dos sonhos pra derrotar:',
+      options: [
+        { label: 'Um gênio do crime com plano complexo', scores: { sam: 2 } },
+        { label: 'Uma rival fashion do mal', scores: { clover: 2 } },
+        { label: 'Um monstro gigante pra correr atrás', scores: { alex: 2 } }
+      ]
+    },
+    {
+      text: 'No mall Beverly Hills você…',
+      options: [
+        { label: 'Repara em pistas suspeitas', scores: { sam: 2 } },
+        { label: 'Já está na vitrine', scores: { clover: 2 } },
+        { label: 'Pega o milkshake e corre', scores: { alex: 2 } }
+      ]
+    },
+    {
+      text: 'Como você reage ao Jerry da WOOHP?',
+      options: [
+        { label: 'Presta atenção no briefing todinho', scores: { sam: 2 } },
+        { label: 'Pergunta se o uniforme combina', scores: { clover: 2 } },
+        { label: 'Já quer saltar do avião', scores: { alex: 2 } }
+      ]
+    },
+    {
+      text: 'Sua vibe de espiã:',
+      options: [
+        { label: 'Cérebro da operação', scores: { sam: 2 } },
+        { label: 'Estilo e distração', scores: { clover: 2 } },
+        { label: 'Ação e coração', scores: { alex: 2 } }
+      ]
     }
   ]
 };

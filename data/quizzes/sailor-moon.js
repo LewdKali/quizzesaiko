@@ -106,6 +106,46 @@ module.exports = {
         { label: '“Ninguém mexe com minhas amigas.”', scores: { jupiter: 2 } },
         { label: '“Beleza também é poder.”', scores: { venus: 2 } }
       ]
+    },
+    {
+      text: 'Seu lanche depois da escola:',
+      options: [
+        { label: 'Doce + game', scores: { moon: 2 } },
+        { label: 'Chá e livro', scores: { mercury: 2 } },
+        { label: 'Algo picante / intenso', scores: { mars: 2 } },
+        { label: 'Comida caseira', scores: { jupiter: 2 } },
+        { label: 'Café fashion com as amigas', scores: { venus: 2 } }
+      ]
+    },
+    {
+      text: 'Em um crush, você…',
+      options: [
+        { label: 'Idealiza e se atrapalha', scores: { moon: 2 } },
+        { label: 'Observa em silêncio', scores: { mercury: 2 } },
+        { label: 'Sente forte e rápido', scores: { mars: 2 } },
+        { label: 'Cuida e protege', scores: { jupiter: 2 } },
+        { label: 'Flerta com confiança', scores: { venus: 2 } }
+      ]
+    },
+    {
+      text: 'Seu acessório mágico seria…',
+      options: [
+        { label: 'Tiara da lua', scores: { moon: 2 } },
+        { label: 'Mini computador', scores: { mercury: 2 } },
+        { label: 'Ofuda / fogo sagrado', scores: { mars: 2 } },
+        { label: 'Folhas / trovão', scores: { jupiter: 2 } },
+        { label: 'Corrente do amor', scores: { venus: 2 } }
+      ]
+    },
+    {
+      text: 'No grupo de amigas você salva o dia…',
+      options: [
+        { label: 'Com coragem no último segundo', scores: { moon: 2 } },
+        { label: 'Com informação certeira', scores: { mercury: 2 } },
+        { label: 'Com intuição afiada', scores: { mars: 2 } },
+        { label: 'Com força e lealdade', scores: { jupiter: 2 } },
+        { label: 'Com liderança e estilo', scores: { venus: 2 } }
+      ]
     }
   ]
 };

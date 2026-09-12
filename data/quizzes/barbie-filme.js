@@ -93,6 +93,42 @@ module.exports = {
         { label: '“Missão aceita.”', scores: { spy: 2 } },
         { label: '“Vamos fazer um show!”', scores: { rock: 2 } }
       ]
+    },
+    {
+      text: 'Seu filme Barbie favorito seria sobre…',
+      options: [
+        { label: 'Um reino e uma coroa', scores: { princess: 2 } },
+        { label: 'Asas e um portal mágico', scores: { fairy: 2 } },
+        { label: 'Uma missão secreta internacional', scores: { spy: 2 } },
+        { label: 'Uma banda e um festival', scores: { rock: 2 } }
+      ]
+    },
+    {
+      text: 'Como você anima uma amiga triste:',
+      options: [
+        { label: 'Com gentileza de conto de fadas', scores: { princess: 2 } },
+        { label: 'Com imaginação e “e se a gente…”', scores: { fairy: 2 } },
+        { label: 'Com plano prático pra resolver', scores: { spy: 2 } },
+        { label: 'Com música alta e dança', scores: { rock: 2 } }
+      ]
+    },
+    {
+      text: 'Seu closet tem mais…',
+      options: [
+        { label: 'Vestidos longos e tiaras', scores: { princess: 2 } },
+        { label: 'Asas, glitter e pastéis', scores: { fairy: 2 } },
+        { label: 'Preto, óculos e casacos', scores: { spy: 2 } },
+        { label: 'Jaqueta, microfone e attitude', scores: { rock: 2 } }
+      ]
+    },
+    {
+      text: 'No final do dia você quer…',
+      options: [
+        { label: 'Um castelo em paz', scores: { princess: 2 } },
+        { label: 'Um céu cheio de estrelas mágicas', scores: { fairy: 2 } },
+        { label: 'Missão cumprida com estilo', scores: { spy: 2 } },
+        { label: 'Aplausos e bis', scores: { rock: 2 } }
+      ]
     }
   ]
 };

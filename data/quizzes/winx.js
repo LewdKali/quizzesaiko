@@ -108,6 +108,50 @@ module.exports = {
         { label: '“Isso tem solução lógica.”', scores: { tecna: 2 } },
         { label: '“Eu danço minha própria batalha.”', scores: { aisha: 2 } }
       ]
+    },
+    {
+      text: 'Seu lugar favorito em Alfea seria…',
+      options: [
+        { label: 'A biblioteca de histórias perdidas', scores: { bloom: 2 } },
+        { label: 'O camarim / espelho mágico', scores: { stella: 2 } },
+        { label: 'A estufa de plantas', scores: { flora: 2 } },
+        { label: 'A sala de música', scores: { musa: 2 } },
+        { label: 'O lab de tecnologia', scores: { tecna: 2 } },
+        { label: 'A arena / pista de dança', scores: { aisha: 2 } }
+      ]
+    },
+    {
+      text: 'Como você enfrenta um vilão?',
+      options: [
+        { label: 'Com poder emocional intenso', scores: { bloom: 2 } },
+        { label: 'Com luz e presença cênica', scores: { stella: 2 } },
+        { label: 'Com calma e natureza', scores: { flora: 2 } },
+        { label: 'Com ritmo e ondas sonoras', scores: { musa: 2 } },
+        { label: 'Com análise e gadgets', scores: { tecna: 2 } },
+        { label: 'Com movimento e Morphix', scores: { aisha: 2 } }
+      ]
+    },
+    {
+      text: 'Seu presente ideal:',
+      options: [
+        { label: 'Algo ligado à sua origem / família', scores: { bloom: 2 } },
+        { label: 'Roupa ou acessório fashion', scores: { stella: 2 } },
+        { label: 'Flor rara / kit de jardinagem', scores: { flora: 2 } },
+        { label: 'Fone top / ingresso de show', scores: { musa: 2 } },
+        { label: 'Gadget novo', scores: { tecna: 2 } },
+        { label: 'Tênis / aula de dança', scores: { aisha: 2 } }
+      ]
+    },
+    {
+      text: 'Nas amizades você é a que…',
+      options: [
+        { label: 'Une todo mundo na missão', scores: { bloom: 2 } },
+        { label: 'Levanta o astral com estilo', scores: { stella: 2 } },
+        { label: 'Acolhe quando alguém tá mal', scores: { flora: 2 } },
+        { label: 'Entende as emoções pela vibe', scores: { musa: 2 } },
+        { label: 'Resolve o “como fazer”', scores: { tecna: 2 } },
+        { label: 'Puxa pra ação e movimento', scores: { aisha: 2 } }
+      ]
     }
   ]
 };

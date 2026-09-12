@@ -93,6 +93,42 @@ module.exports = {
         { label: 'Estar ao lado das amigas', scores: { rena: 2 } },
         { label: 'Ser reconhecida como heroína', scores: { bee: 2 } }
       ]
+    },
+    {
+      text: 'Seu Kwami combinaria com…',
+      options: [
+        { label: 'Sorte e criação (Tikki)', scores: { ladybug: 2 } },
+        { label: 'Destruição e humor (Plagg)', scores: { chat: 2 } },
+        { label: 'Ilusão (Trixx)', scores: { rena: 2 } },
+        { label: 'Subjugação / brilho (Pollen)', scores: { bee: 2 } }
+      ]
+    },
+    {
+      text: 'Fora da máscara você é…',
+      options: [
+        { label: 'Responsável e um pouco ansiosa', scores: { ladybug: 2 } },
+        { label: 'Descolada e brincalhona', scores: { chat: 2 } },
+        { label: 'A melhor amiga confidente', scores: { rena: 2 } },
+        { label: 'Popular e determinada', scores: { bee: 2 } }
+      ]
+    },
+    {
+      text: 'Em uma akumatização perto de você:',
+      options: [
+        { label: 'Monta o plano e usa o Lucky Charm', scores: { ladybug: 2 } },
+        { label: 'Distrai com piada e Cataclysm', scores: { chat: 2 } },
+        { label: 'Cria uma ilusão pra ajudar', scores: { rena: 2 } },
+        { label: 'Partiu Venom no vilão', scores: { bee: 2 } }
+      ]
+    },
+    {
+      text: 'Seu romance ideal:',
+      options: [
+        { label: 'Alguém parceiro de missão', scores: { ladybug: 2 } },
+        { label: 'Alguém pra flertar o dia todo', scores: { chat: 2 } },
+        { label: 'Alguém que vira amizade forte', scores: { rena: 2 } },
+        { label: 'Alguém que te admira no holofote', scores: { bee: 2 } }
+      ]
     }
   ]
 };

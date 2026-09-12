@@ -96,6 +96,62 @@ module.exports = {
         { label: 'O coração do grupo', scores: { bubbles: 2 } },
         { label: 'A que não tem medo de nada', scores: { buttercup: 2 } }
       ]
+    },
+    {
+      text: 'Seu estilo de falar é…',
+      options: [
+        { label: 'Clara, educada e convincente', scores: { blossom: 2 } },
+        { label: 'Doce, cheia de “hihi” e carinho', scores: { bubbles: 2 } },
+        { label: 'Reta, sarcástica e sem rodeios', scores: { buttercup: 2 } }
+      ]
+    },
+    {
+      text: 'No karaoke com as amigas:',
+      options: [
+        { label: 'Escolhe a música e conduz o grupo', scores: { blossom: 2 } },
+        { label: 'Canta a mais fofa / emo', scores: { bubbles: 2 } },
+        { label: 'Pega o microfone e explode no palco', scores: { buttercup: 2 } }
+      ]
+    },
+    {
+      text: 'Seu animal espiritual:',
+      options: [
+        { label: 'Unicórnio / águia', scores: { blossom: 2 } },
+        { label: 'Polvo / coelhinho / borboleta', scores: { bubbles: 2 } },
+        { label: 'Pantera / dragão', scores: { buttercup: 2 } }
+      ]
+    },
+    {
+      text: 'Diante de um problema grande:',
+      options: [
+        { label: 'Faz um plano A, B e C', scores: { blossom: 2 } },
+        { label: 'Pede ajuda e vai com o coração', scores: { bubbles: 2 } },
+        { label: 'Enfrenta de frente, agora', scores: { buttercup: 2 } }
+      ]
+    },
+    {
+      text: 'Seu quarto parece…',
+      options: [
+        { label: 'Organizado, com quadro de metas', scores: { blossom: 2 } },
+        { label: 'Pelúcias, adesivos e bagunça fofa', scores: { bubbles: 2 } },
+        { label: 'Poster de ação, peso e vibe “don’t mess”', scores: { buttercup: 2 } }
+      ]
+    },
+    {
+      text: 'Em um filme, você seria…',
+      options: [
+        { label: 'A heroína estrategista', scores: { blossom: 2 } },
+        { label: 'A sidekick adorável que salva o dia', scores: { bubbles: 2 } },
+        { label: 'A que dá o golpe final', scores: { buttercup: 2 } }
+      ]
+    },
+    {
+      text: 'Como você demonstra carinho?',
+      options: [
+        { label: 'Cuidando e resolvendo as coisas da pessoa', scores: { blossom: 2 } },
+        { label: 'Com abraço, presente e mensagem fofa', scores: { bubbles: 2 } },
+        { label: 'Defendendo ela de qualquer um', scores: { buttercup: 2 } }
+      ]
     }
   ]
 };

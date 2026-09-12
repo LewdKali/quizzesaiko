@@ -117,6 +117,87 @@ module.exports = {
         { label: '“Sugar, spice, boom!”', correct: false },
         { label: '“Powerpuff out!”', correct: false }
       ]
+    },
+    {
+      text: 'Qual poder especial a Florzinha costuma usar com o gelo?',
+      options: [
+        { label: 'Sopro de gelo', correct: true },
+        { label: 'Raio laser', correct: false },
+        { label: 'Tornado verde', correct: false },
+        { label: 'Super velocidade só dela', correct: false }
+      ]
+    },
+    {
+      text: 'A “irmã” feita às pressas que deu errado se chama…',
+      options: [
+        { label: 'Coelha (Bunny)', correct: true },
+        { label: 'Bellota', correct: false },
+        { label: 'Bliss', correct: false },
+        { label: 'Bonnie', correct: false }
+      ]
+    },
+    {
+      text: 'Qual vilã usa o cabelo como arma e seduz os homens da cidade?',
+      options: [
+        { label: 'Sedusa', correct: true },
+        { label: 'Princesa Mais', correct: false },
+        { label: 'Senhorita Bellum', correct: false },
+        { label: 'Gangue Gangrena', correct: false }
+      ]
+    },
+    {
+      text: 'O nome do criador da série original (Cartoon Network) é…',
+      options: [
+        { label: 'Craig McCracken', correct: true },
+        { label: 'Genndy Tartakovsky', correct: false },
+        { label: 'Lauren Faust', correct: false },
+        { label: 'Seth MacFarlane', correct: false }
+      ]
+    },
+    {
+      text: 'Qual vilão mora numa cabana e grita com quem se aproxima?',
+      options: [
+        { label: 'Peludinho (Fuzzy Lumpkins)', correct: true },
+        { label: 'Macaco Louco', correct: false },
+        { label: 'Ele (Him)', correct: false },
+        { label: 'O Prefeito', correct: false }
+      ]
+    },
+    {
+      text: 'A Gangue Gangrena é formada principalmente por…',
+      options: [
+        { label: 'Garotos bagunceiros / delinquentes', correct: true },
+        { label: 'Robôs do Mojo', correct: false },
+        { label: 'Monstros de gelo', correct: false },
+        { label: 'Alunas da Senhorita Keane', correct: false }
+      ]
+    },
+    {
+      text: 'Qual menina fica “furiosa” de um jeito lendário quando irritada?',
+      options: [
+        { label: 'Lindinha', correct: true },
+        { label: 'Florzinha', correct: false },
+        { label: 'Docinho', correct: false },
+        { label: 'Princesa Mais', correct: false }
+      ]
+    },
+    {
+      text: 'O telefone vermelho na casa das meninas serve para…',
+      options: [
+        { label: 'O Prefeito pedir ajuda em emergências', correct: true },
+        { label: 'Pedir pizza', correct: false },
+        { label: 'Falar com o Macaco Louco', correct: false },
+        { label: 'Ligar para a escola', correct: false }
+      ]
+    },
+    {
+      text: 'No reboot de 2016, qual personagem nova é apresentada como irmã?',
+      options: [
+        { label: 'Bliss', correct: true },
+        { label: 'Bunny', correct: false },
+        { label: 'Bellum', correct: false },
+        { label: 'Bloom', correct: false }
+      ]
     }
   ]
 };
