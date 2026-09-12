@@ -4,14 +4,18 @@ const { listQuizzes, getQuiz } = require('./data/quizzes');
 
 const app = express();
 const PORT = process.env.PORT || 3080;
+const root = process.cwd();
 
 app.set('view engine', 'ejs');
-app.set('views', path.join(__dirname, 'views'));
+app.set('views', path.join(root, 'views'));
 
-app.use(express.static(path.join(__dirname, 'public'), {
-  maxAge: '1h',
-  etag: true
-}));
+// Local only — no Vercel, static vem de /public pelo CDN
+if (!process.env.VERCEL) {
+  app.use(express.static(path.join(root, 'public'), {
+    maxAge: '1h',
+    etag: true
+  }));
+}
 
 app.get('/', (_req, res) => {
   res.render('index', {
@@ -44,6 +48,10 @@ app.get('/api/quizzes/:id', (req, res) => {
   res.json(quiz);
 });
 
-app.listen(PORT, () => {
-  console.log(`Quizzes da Aiko em http://localhost:${PORT}`);
-});
+module.exports = app;
+
+if (require.main === module) {
+  app.listen(PORT, () => {
+    console.log(`Quizzes da Aiko em http://localhost:${PORT}`);
+  });
+}
