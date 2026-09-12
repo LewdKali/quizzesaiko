@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#1a1520">
+  <meta name="description" content="Quizzes fofos pra você e suas amigas — Meninas Superpoderosas e mais">
+  <link rel="icon" href="/icons/favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+  <title><%= title %></title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <header class="header">
+    <a class="header__title" href="/">Quizzes da Aiko</a>
+    <nav class="header__nav" aria-label="Principal">
+      <a class="header__link" href="#lista">Todos os quizzes</a>
+    </nav>
+  </header>
+
+  <main class="main">
+    <section class="hero">
+      <div class="hero__bg" aria-hidden="true">
+        <img src="/img/characters/ppg-trio.png" alt="">
+      </div>
+      <div class="hero__content">
+        <p class="hero__eyebrow">pro cantinho dela &amp; das amigas</p>
+        <h1 class="hero__brand">Quizzes da Aiko</h1>
+        <p class="hero__lead">Descobre qual Menina Superpoderosa você é e brinca com as amigas.</p>
+        <div class="hero__cta">
+          <a class="btn btn--pink" href="/quiz/ppg-quem-sou-eu">Começar com as Superpoderosas</a>
+          <a class="btn btn--ghost" href="#lista">Ver todos</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="featured">
+      <h2 class="section-title">Destaque Powerpuff</h2>
+      <div class="featured__grid">
+        <% quizzes.filter(q => q.tags.includes('Meninas Superpoderosas')).forEach(function(q) { %>
+          <a class="quiz-card" href="/quiz/<%= q.id %>">
+            <div class="quiz-card__cover" style="background: <%= q.cover.gradient %>">
+              <% if (q.cover.image) { %>
+                <img class="quiz-card__img" src="<%= q.cover.image %>" alt="" loading="lazy">
+              <% } else { %>
+                <span class="quiz-card__emoji" aria-hidden="true"><%= q.cover.emoji %></span>
+              <% } %>
+            </div>
+            <div class="quiz-card__body">
+              <span class="quiz-card__type"><%= q.type === 'trivia' ? 'Trivia' : 'Personalidade' %></span>
+              <h3 class="quiz-card__title"><%= q.title %></h3>
+              <p class="quiz-card__sub"><%= q.subtitle %></p>
+              <p class="quiz-card__meta"><%= q.questionCount %> perguntas</p>
+            </div>
+          </a>
+        <% }) %>
+      </div>
+    </section>
+
+    <section id="lista" class="catalog">
+      <h2 class="section-title">Todos os quizzes</h2>
+      <p class="subtitle">Desenhos femininos, nostalgia e diversão</p>
+      <div class="grid">
+        <% quizzes.forEach(function(q) { %>
+          <a class="quiz-card" href="/quiz/<%= q.id %>">
+            <div class="quiz-card__cover" style="background: <%= q.cover.gradient %>">
+              <% if (q.cover.image) { %>
+                <img class="quiz-card__img" src="<%= q.cover.image %>" alt="" loading="lazy">
+              <% } else { %>
+                <span class="quiz-card__emoji" aria-hidden="true"><%= q.cover.emoji %></span>
+              <% } %>
+            </div>
+            <div class="quiz-card__body">
+              <div class="quiz-card__tags">
+                <% q.tags.forEach(function(t) { %>
+                  <span class="tag"><%= t %></span>
+                <% }) %>
+              </div>
+              <h3 class="quiz-card__title"><%= q.title %></h3>
+              <p class="quiz-card__sub"><%= q.subtitle %></p>
+              <p class="quiz-card__meta"><%= q.questionCount %> perguntas · <%= q.type === 'trivia' ? 'pontuação' : 'resultado' %></p>
+            </div>
+          </a>
+        <% }) %>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Quizzes da Aiko · sem login, só diversão</p>
+  </footer>
+</body>
+</html>

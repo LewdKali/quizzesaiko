@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#1a1520">
+  <meta name="description" content="<%= quiz.subtitle %>">
+  <link rel="icon" href="/icons/favicon-32.png" type="image/png" sizes="32x32">
+  <title><%= title %> · Quizzes da Aiko</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <header class="header">
+    <a class="header__title" href="/">Quizzes da Aiko</a>
+    <nav class="header__nav" aria-label="Principal">
+      <a class="header__link" href="/">Início</a>
+    </nav>
+  </header>
+
+  <main class="main main--quiz">
+    <a class="btn-back" href="/">← Voltar</a>
+
+    <div id="quiz-app"
+         data-quiz-id="<%= quiz.id %>"
+         data-quiz-type="<%= quiz.type %>">
+      <section id="quiz-intro" class="quiz-panel">
+        <div class="quiz-intro__cover" style="background: <%= quiz.cover.gradient %>">
+          <% if (quiz.cover.image) { %>
+            <img class="quiz-intro__img" src="<%= quiz.cover.image %>" alt="">
+          <% } else { %>
+            <span class="quiz-intro__emoji"><%= quiz.cover.emoji %></span>
+          <% } %>
+        </div>
+        <h1 class="quiz-intro__title"><%= quiz.title %></h1>
+        <p class="quiz-intro__sub"><%= quiz.subtitle %></p>
+        <p class="quiz-intro__meta"><%= quiz.questions.length %> perguntas · <%= quiz.type === 'trivia' ? 'acerte o máximo' : 'sem resposta certa — só vibe' %></p>
+        <% if (quiz.type === 'personality' && quiz.results) { %>
+          <div class="cast-row" aria-label="Personagens">
+            <% Object.values(quiz.results).forEach(function(r) { %>
+              <div class="cast-chip">
+                <% if (r.image) { %>
+                  <img src="<%= r.image %>" alt="<%= r.name %>" loading="lazy">
+                <% } else { %>
+                  <span><%= r.emoji %></span>
+                <% } %>
+                <span class="cast-chip__name"><%= r.name %></span>
+              </div>
+            <% }) %>
+          </div>
+        <% } %>
+        <button class="btn btn--pink" type="button" id="btn-start">Começar</button>
+      </section>
+
+      <section id="quiz-play" class="quiz-panel" hidden>
+        <div class="progress">
+          <div class="progress__bar" id="progress-bar"></div>
+        </div>
+        <p class="progress__label" id="progress-label"></p>
+        <h2 class="question-text" id="question-text"></h2>
+        <div class="options" id="options"></div>
+      </section>
+
+      <section id="quiz-result" class="quiz-panel" hidden>
+        <div class="result-card" id="result-card"></div>
+        <div class="result-actions">
+          <button class="btn btn--pink" type="button" id="btn-retry">Refazer</button>
+          <button class="btn btn--ghost" type="button" id="btn-share">Copiar resultado</button>
+          <a class="btn btn--ghost" href="/">Outros quizzes</a>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <script>
+    window.QUIZ = <%- JSON.stringify(quiz) %>;
+  </script>
+  <script src="/js/quiz.js"></script>
+</body>
+</html>
