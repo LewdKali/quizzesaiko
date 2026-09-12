@@ -49,6 +49,26 @@ body::before {
   border-bottom: 1px solid var(--border);
 }
 
+.header__brand {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  flex-shrink: 0;
+}
+
+.header__logo {
+  width: 52px;
+  height: 52px;
+  object-fit: contain;
+  display: block;
+  filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.35));
+  transition: transform 0.15s ease;
+}
+
+.header__brand:hover .header__logo {
+  transform: scale(1.05);
+}
+
 .header__title {
   font-size: clamp(1.05rem, 3.5vw, 1.55rem);
   font-weight: 800;
@@ -144,6 +164,15 @@ body::before {
   text-transform: uppercase;
   color: var(--lavender);
   margin-bottom: 0.65rem;
+}
+
+.hero__logo {
+  width: min(240px, 58vw);
+  height: auto;
+  display: block;
+  margin: 0 auto 1rem;
+  filter: drop-shadow(0 12px 28px rgba(0, 0, 0, 0.45));
+  animation: fade 0.5s ease;
 }
 
 .hero__brand {
