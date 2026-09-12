@@ -6,11 +6,17 @@ const winx = require('./winx');
 const totallySpies = require('./totally-spies');
 const miraculous = require('./miraculous');
 const barbie = require('./barbie-filme');
+const sakuraCardcaptors = require('./sakura-cardcaptors');
+const nana = require('./nana');
+const madokaMagica = require('./madoka-magica');
 
 const QUIZZES = [
   ppgQuemSouEu,
   ppgTrivia,
   ppgVilao,
+  sakuraCardcaptors,
+  nana,
+  madokaMagica,
   sailorMoon,
   winx,
   totallySpies,
